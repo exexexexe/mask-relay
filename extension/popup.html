@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="p-head">
+    <div class="logo"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2 10c0-2.5 2.4-4 5-4h10c2.6 0 5 1.5 5 4 0 5-3.6 9-7.5 9-1.9 0-2.5-2-3.5-2s-1.6 2-3.5 2C3.6 19 2 15 2 10zm5.5 1.5a2 2 0 1 0 4 0 6 6 0 0 0-4 0zm9 0a6 6 0 0 0-4 0 2 2 0 1 0 4 0z"/></svg></div>
+    <strong>Mask Relay</strong>
+    <button id="openApp" class="p-open">Open inbox →</button>
+  </header>
+  <div id="banner"></div>
+  <form id="newForm" class="p-new" autocomplete="off">
+    <input id="newLabel" maxlength="60" placeholder="Label, e.g. Spotify">
+    <button class="btn-primary" id="newSubmit" type="submit">New mask</button>
+  </form>
+  <p class="p-hint">Creates a random address and copies it. The label stays on this device.</p>
+  <div class="p-list" id="list"></div>
+  <div class="toast-zone" id="toasts" aria-live="polite"></div>
+  <script src="core.js"></script>
+  <script src="platform.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
