@@ -3,7 +3,7 @@
 <p align="center">Disposable masked email addresses with a private, tracker-blocking inbox.<br>Keep newsletters, ads and spam out of your real mailbox.</p>
 <p align="center">
   <a href="https://github.com/exexexexe/mask-relay/releases/latest/download/MaskRelay.dmg"><img alt="Download for macOS" src="https://img.shields.io/badge/Download-macOS%20.dmg-7c6cff?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay.xpi"><img alt="Download Firefox add-on" src="https://img.shields.io/badge/Download-Firefox%20add--on-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white"></a>
+  <a href="https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay-firefox.zip"><img alt="Download Firefox add-on" src="https://img.shields.io/badge/Download-Firefox%20add--on-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white"></a>
   <br><sub><a href="https://github.com/exexexexe/mask-relay/releases">All releases &amp; checksums</a></sub>
 </p>
 
@@ -37,9 +37,9 @@
 
 ### Firefox (128+)
 
-Download [**mask-relay.xpi**](https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay.xpi). It is not yet signed by Mozilla, so release Firefox only loads it temporarily:
+Download [**mask-relay-firefox.zip**](https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay-firefox.zip) (same add-on as the `.xpi`; the `.zip` link downloads instead of Firefox trying to install it). It is not yet signed by Mozilla, so release Firefox only loads it temporarily:
 
-- **Try it:** `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on…* → pick the `.xpi` (removed when Firefox restarts).
+- **Try it:** `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on…* → pick the `.zip` (or `.xpi`) (removed when Firefox restarts).
 - **Permanent:** use Firefox Developer Edition / Nightly with `xpinstall.signatures.required = false` in `about:config`, then drag the `.xpi` into Firefox — or sign it yourself (see below).
 
 ## Privacy model
