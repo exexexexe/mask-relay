@@ -2,8 +2,9 @@
 <h1 align="center">Mask Relay</h1>
 <p align="center">Disposable masked email addresses with a private, tracker-blocking inbox.<br>Keep newsletters, ads and spam out of your real mailbox.</p>
 <p align="center">
-  <a href="../../releases/latest"><b>Download for macOS</b></a> ·
-  <a href="../../releases/latest"><b>Firefox add-on</b></a>
+  <a href="https://github.com/exexexexe/mask-relay/releases/latest/download/MaskRelay.dmg"><img alt="Download for macOS" src="https://img.shields.io/badge/Download-macOS%20.dmg-7c6cff?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay.xpi"><img alt="Download Firefox add-on" src="https://img.shields.io/badge/Download-Firefox%20add--on-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white"></a>
+  <br><sub><a href="https://github.com/exexexexe/mask-relay/releases">All releases &amp; checksums</a></sub>
 </p>
 
 ![Mask Relay](docs/screenshot.png)
@@ -31,12 +32,12 @@
 
 ### macOS (12 Monterey or later, Apple Silicon & Intel)
 
-1. Download `MaskRelay-x.y.z.dmg` from [Releases](../../releases/latest) and drag **Mask Relay** to Applications.
+1. Download [**MaskRelay.dmg**](https://github.com/exexexexe/mask-relay/releases/latest/download/MaskRelay.dmg) and drag **Mask Relay** to Applications.
 2. The app is not notarized by Apple, so the first launch is blocked. Open it once, then go to **System Settings → Privacy & Security → Open Anyway**. (Or run `xattr -dr com.apple.quarantine "/Applications/Mask Relay.app"`.)
 
 ### Firefox (128+)
 
-The release `.xpi` is not yet signed by Mozilla, so release Firefox only loads it temporarily:
+Download [**mask-relay.xpi**](https://github.com/exexexexe/mask-relay/releases/latest/download/mask-relay.xpi). It is not yet signed by Mozilla, so release Firefox only loads it temporarily:
 
 - **Try it:** `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on…* → pick the `.xpi` (removed when Firefox restarts).
 - **Permanent:** use Firefox Developer Edition / Nightly with `xpinstall.signatures.required = false` in `about:config`, then drag the `.xpi` into Firefox — or sign it yourself (see below).
